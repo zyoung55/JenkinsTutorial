@@ -37,8 +37,12 @@ class Calculator {
     .
     etc
      */
-    int fibonacciNumberFinder(int n){
-        return 0;
+    int fibonacciNumberFinder(int n) {
+      // Code adapted from https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+      if (n <= 1) {
+        return n;
+      }
+      return fibonacciNumberFinder(n-1) + fibonacciNumberFinder(n-2);
     }
 
 
