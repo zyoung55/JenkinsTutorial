@@ -1,3 +1,5 @@
+import java.util.UUID;
+
 class Calculator {
 
     Calculator(){
@@ -67,8 +69,8 @@ class Calculator {
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
     String createUniqueID(String n){
-
-        return null;
+        // https://www.geeksforgeeks and the oracle docs referenced for the below code.
+        return n + UUID.randomUUID().toString();
     }
 
 
