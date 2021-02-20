@@ -54,7 +54,8 @@ class Calculator {
     if int a = 16 then this method returns: 10000
      */
     String intToBinaryNumber(int n){
-        return null;
+      // Function found at https://www.geeksforgeeks.org/java-lang-integer-tobinarystring-method/
+      return Integer.toBinaryString(n);
     }
 
     /*
