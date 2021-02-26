@@ -1,25 +1,25 @@
 import java.util.UUID;
 
 /* This is an extra note so we can commit one more time after all tests pass... */
-class Calculator {
+public class Calculator {
 
-    Calculator(){
+    public Calculator(){
 
     }
 
-    int add(int a , int b){
+    public int add(int a , int b){
         return a + b;
     }
 
-    int subtract(int a , int b){
+    public int subtract(int a , int b){
         return a - b;
     }
 
-    int multiply(int a , int b){
+    public int multiply(int a , int b){
         return a * b;
     }
 
-    int divide(int a , int b){
+    public int divide(int a , int b){
         return a / b;
     }
 
@@ -40,7 +40,7 @@ class Calculator {
     .
     etc
      */
-    int fibonacciNumberFinder(int n) {
+    public int fibonacciNumberFinder(int n) {
       // Code adapted from https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
       if (n <= 1) {
         return n;
@@ -56,7 +56,7 @@ class Calculator {
     if int a = 10 then this method returns: 1010
     if int a = 16 then this method returns: 10000
      */
-    String intToBinaryNumber(int n){
+    public String intToBinaryNumber(int n){
       // Function found at https://www.geeksforgeeks.org/java-lang-integer-tobinarystring-method/
       return Integer.toBinaryString(n);
     }
@@ -69,7 +69,7 @@ class Calculator {
 
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
-    String createUniqueID(String n){
+    public String createUniqueID(String n){
         // https://www.geeksforgeeks and the oracle docs referenced for the below code.
         return n + UUID.randomUUID().toString();
     }
